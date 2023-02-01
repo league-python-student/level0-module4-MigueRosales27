@@ -23,24 +23,24 @@ if __name__ == '__main__':
 
     if is_weekend:
         test_quest = simpledialog.askstring(None,"did you pass all your test?")
-    if test_quest == "yes":
-        messagebox.showinfo(None,"Great Job!")
-    else:
-        messagebox.showinfo(None,"Study more! ")
+        if test_quest == "yes":
+            messagebox.showinfo(None,"Great Job!")
+        else:
+            messagebox.showinfo(None,"Study more! ")
     if is_weekend:
         game_on = simpledialog.askstring(None, "Is the game on?")
 
-    if game_on == "yes":
-        messagebox.showinfo(None,"Have fun!")
-    else:
-        messagebox.showinfo(None,"Can't Wait!")
+        if game_on == "yes":
+            messagebox.showinfo(None,"Have fun!")
+        else:
+            messagebox.showinfo(None,"Can't Wait!")
 
     if is_weekend:
         red_color= simpledialog.showinfo(None,"Should the shape be red?")
 
-    if red_color == "yes":
-        window = turtle.Screen()
-        window.bgcolor('white')
+        if red_color == "yes":
+            window = turtle.Screen()
+            window.bgcolor('white')
 
     #     Display a different message to the user depending on whether it is
     #     the weekend or not.
