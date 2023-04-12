@@ -28,9 +28,14 @@ if __name__ == '__main__':
         if useranswer==pi[pguess]:
             print(pi[pguess])
             pguess=pguess+1
+            print("correct")
 
         else:
+            print("incorrect")
             break
+
+
+
 
     # TODO) Use a while loop to keep asking for the next digit of pi
 
